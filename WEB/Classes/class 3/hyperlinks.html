@@ -48,3 +48,66 @@
     </picture>
 </body>
 </html>
+<!--
+1)	Use different hyperlinks (Inter,intra, email & external) according to your details.
+2)	Also, use all kinds of Hyperlink references
+3)	Use all target attributes and show examples by yourself.
+4)	Create 2 different pages with name index.html and gallery.html.
+In index.html create a link to the gallery and we again go back to the index.html
+5)	Create image.html put 5 pic and use all image attributes (height, width, alt, title, src)
+6)	Make some images as hyperlinks
+7)	Show img tag examples with all attributes
+8)	Use img src set and show some examples.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Three</title>
+</head>
+<body>
+    <h2><center>Hyperlinks</center></h2>
+    <hr>
+    <p>A hyperlink is an element that links one page to another or links to 
+    a specific part of a page. Hyperlinks are created using the <a> (anchor) tag. 
+    The href attribute inside the <a> tag specifies the destination URL or the link's target.</p>
+
+    <h2>Index</h2>
+    <ul type="disc">
+        <li><a href="#External">External Hyperlink</a></li>
+        <li><a href="#Internal">Internal Hyperlink</a></li>
+        <li><a href="#Email">Email hyperlink</a></li>
+    </ul>
+    
+    <h2><a id="External">External Hyperlink</a></h2>
+    <a href="https://www.youtube.com" target="_blank">   
+
+    <img src="1.webp" alt="" width="200px"height="150px" title="otter">
+    <br>
+    <img src="2.jpg" alt=""width="200px"height="150px" title="otter">
+    <br>
+</a>
+
+ <h2><a id="Internal"></a>Internal Hyperlink (Intra-link)</h2>
+<hr>
+    <a href="https://www.google.com">
+    <img src="3.jpg" alt=""width="200px"height="150px" title="cat">
+    <br>
+    <img src="4.jpg" alt=""width="200px"height="150px" title="cat">
+    <br>
+    <img src="5.jpg" alt=""width="200px"height="150px" title="cat">
+</a>
+
+    
+<h2><a id="Email"></a>Email hyperlink</h2>
+<hr>
+    <a href="mailto:xyz@gmail.com">Email link</a>
+<hr>
+    <picture>
+        <source media="(min-width:800px)" srcset="1.jpg">
+        <source media="(min-width:1000px)" srcset="2.jpg">
+        <source media="(min-width:1200px)" srcset="3.jpg">
+        <source media="(min-width:1400px)" srcset="5.jpg">
+        <br>
+        <img src="4.jpg" alt="cat" width="100px" height="90px">
+    </picture>
+</body>
+</html>
