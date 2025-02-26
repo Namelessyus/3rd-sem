@@ -1,38 +1,86 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Form</title>
-</head>
-<body>
-    <h1>FORM</h1>
-    <form action="hi.html">
-    First Name:
-        <input type="text" name="" id="" placeholder="hello" required size="10">
-        <br> <br>
-        Last Name:
-        <input type="text" name="" id="" value="hi" readonly>
-        <br> <br>
-        Email:
-        <input type="email" name="" id="">
-        <br> <br>
-        Password:
-        <input type="password" name="" id="">
-        <br> <br>
-        Hobby
-        <input type="checkbox" name="" id="" checked>Singing
-        <input type="checkbox" name="" id="" checked>Dancing
-        <input type="checkbox" name="" id="" checked>Cooking
-        <input type="checkbox" name="" id="" checked>Drawing
-        <br>
-        Gender:
-        <input type="radio" name="Gender" id="" value="Male">Male
-        <input type="radio" name="Gender" id="" value="Female">Female
-        <input type="radio" name="Gender" id="" value="Others">Others
-        <br>
-        <textarea name="" id="">Comment Here</textarea>
-        <br>
-        <input type="submit" name="" id="">
-        <input type="reset" name="" id="">
-    </form>
-</body>
+        <head>
+            <title>Form</title>
+        </head>
+    <body>
+        <h1>FORM</h1>
+
+        <form action="hi.html">
+
+        First Name:
+            <input type="text" name="" id="" placeholder="hello" required size="50" maxlength="30">
+            <br> <br>
+
+            Last Name:
+            <input type="text" name="" id="" value="hi" readonly>
+            <br> <br>
+
+            Email:
+            <input type="email" name="" id="">
+            <br> <br>
+
+            Password:
+            <input type="password" name="" id="">
+            <br> <br>
+
+            Hobby
+            <input type="checkbox" name="" id="" checked>Singing
+            <input type="checkbox" name="" id="" checked>Dancing
+            <input type="checkbox" name="" id="" checked>Cooking
+            <input type="checkbox" name="" id="" checked>Drawing
+            <br>
+
+            Gender:
+            <input type="radio" name="Gender" id="" value="Male">Male
+            <input type="radio" name="Gender" id="" value="Female">Female
+            <input type="radio" name="Gender" id="" value="Others">Others
+            <br>
+
+            Age
+            <input type="number" name="" id="" min="18" max="60">
+            <br> <br>
+
+            Phone:
+            <input type="number" name="" id="">
+            <br> <br>
+
+            Color:
+            <input type="color" name="" id="" >
+            <br> <br>
+
+            DOB:
+            <input type="date" name="" id="">
+            <br> <br>
+
+            Date and time of filling the form: 
+            <input type="datetime-local">
+            <br> <br>
+
+            Available week: <input type="week">
+            <br> <br>
+
+            Address
+                <select name="Address" id="">
+                    <option value="">Kathmandu</option>
+                    <option value="" selected>Pokhara</option>
+                    <option value="">Chitwan</option>
+                    <option value="">Butwal</option>
+                </select>
+                <br> <br>
+
+            Upload Image
+            <input type="file" name="" id="" accept="image/*">
+                <br> <br>
+
+            Some video that u like from YouTube: <br>
+            <input type="url">
+            <br> <br>
+
+            <textarea name="" id="">Comment Here</textarea>
+            <br>
+            <input type="submit" name="" id="">
+            <input type="reset" name="" id="">
+        </form>
+    </body>
 </html>
