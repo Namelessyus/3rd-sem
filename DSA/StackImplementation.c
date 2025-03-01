@@ -1,6 +1,7 @@
-#include<stdio.h>
-#include <stdlit.h>
-int stack[100], choice, n, top, x; //top is pointer
+#include <stdio.h>
+#include <stdlib.h>
+
+int stack[100], choice, n, top, x,i; //top is pointer
 void push();
 void pop();
 void peek();
@@ -12,7 +13,7 @@ top=-1;   //to empty the stack
 printf("Enter the size of stack. (n<=100):");
 scanf("%d", &n);
 
-printf("\n 1 for push \n 2 for pop \n 3 for peek \n 4 for display \ 5 for exit" );
+printf("\n 1 for push \n 2 for pop \n 3 for peek \n 4 for display \n 5 for exit");
 
 while(1){
 	printf("\n Enter your choice");
@@ -59,7 +60,7 @@ while(1){
 		scanf("%d", &x);		
 			stack[top]=x;
 	}
-
+}
 
 	void pop(){
 		if(top == -1)
@@ -68,7 +69,8 @@ while(1){
 		}
 		else
 		{
-			printf("\n The top most elements is %d", stack[top]);
+			printf("\n The top most elements was %d", stack[top]);
+			top--;
 		}
 	}
 	
@@ -77,13 +79,24 @@ while(1){
 		if(top>=0)
 		{
 			printf("\n The element in Stack");
-			for (i=top; i>=0; i--)
+			for(i=top; i>=0; i--){
 				printf("\n %d", stack[i]);
-				printf("\n Press next choice");
-	}
+			}
+
+		}
 	else{
 			printf("\n The stack is empty");
 	}
+		}
+		
+	void peek(){
+	    		if(top == -1)
+		{
+			printf("\n Stack is underflow");
+		}
+		else
+		{
+			printf("\n The top most elements is %d", stack[top]);
 		}
 	}
 
