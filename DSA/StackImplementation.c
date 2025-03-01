@@ -22,19 +22,15 @@ while(1){
 		case 1:
 			push();
 			break;
-		
 		case 2:
 			pop();
 			break;
-			
 		case 3:
 			peek();
 			break;
-			
 		case 4:
 			display();
 			break;
-			
 		case 5:
 			exit(0);
 
@@ -43,14 +39,11 @@ while(1){
 				printf("\n Enter a valid choice 1-5");
 			}
 	}
-	
 	}
 		return 0;
 	}
-	
 	void push(){
 		if (top == n-1){// to check if the stack is full or not, overflow condition
-		
 		printf ("\n Stack is overflowing");
 	}
 
@@ -73,7 +66,6 @@ while(1){
 			top--;
 		}
 	}
-	
 	void display()
 	{
 		if(top>=0)
@@ -88,7 +80,6 @@ while(1){
 			printf("\n The stack is empty");
 	}
 		}
-		
 	void peek(){
 	    		if(top == -1)
 		{
@@ -99,7 +90,3 @@ while(1){
 			printf("\n The top most elements is %d", stack[top]);
 		}
 	}
-
-
-
-
