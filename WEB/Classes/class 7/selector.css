@@ -1,0 +1,33 @@
+h1
+{
+    background-color: palegoldenrod;
+}
+p
+{
+color: purple;
+}
+h3
+{
+    background-color: palegreen;
+}
+h2
+{
+    background-color: blue;
+    color: red;
+}
+
+#a{
+background-color: paleturquoise;
+}
+
+#b{
+    background-color: palegreen;
+    }
+    #c{
+    background-color: palegoldenrod;
+    }
+
+.abc{
+    background-color: palevioletred;
+
+}
