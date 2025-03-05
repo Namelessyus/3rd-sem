@@ -37,6 +37,15 @@ public class Finding {
         } else {
             System.out.println("The number is zero");
         }
-
+        
+//find greatest number amongst 3 variables then output it
+    int x=10,y=20,z=30;
+    if(x>y){
+        System.out.println("x is greater");
+    }if (y>z){
+        System.out.println("y is greater");
+    }if (z>x){
+         System.out.println("z is greater");
+    }
     }
 }
