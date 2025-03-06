@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Combinators</title>
+
+    <style>
+        div p {
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    Combinators <hr>
+    1. decendant selector (space) <br>
+    it affects the paragrapghs that are inside div
+    even if there are another paragraphs 
+    <!--  <style>
+div p{
+    background-color: red;
+}
+    </style>-->
+    <hr>
+
+    2. child seclector(>)
+    <!--  <style>
+div>p{
+    background-color: red;
+}
+    </style>-->
+    <hr>
+
+    3. adjacement sibling selector(+) <br>
+    affects the paragrapgh that comes right after div 
+    it doesnt affect paragrapgh that comes after div if there is h1 or sth else
+    <!--  <style>
+div+p{
+    background-color: red;
+}
+    </style>-->
+    <hr>
+
+    <p>This is 0 paragraph</p>
+    <div>
+        <p>This is 1st paragraph</p>
+        <p>This is 2nd paragraph</p>
+        <p>This is 3rd paragraph</p>
+        <div>
+            <p>this is paragraph inside another div</p>
+        </div>
+        <p>this is paragraph paragraph</p>
+
+        <section>
+            This is inside section
+        </section>
+    </div>
+
+    <p>This is 4th paragraph</p>
+    <p>This is 5th paragraph</p>
+    <div>
+        <p>this is another paragraph</p>
+    </div>
+    <h4>this is heading</h4>
+    <p>this is paragraph</p>
+    <section>
+        <p>this is paragraph</p>
+    </section>
+
+</body>
+
+</html>

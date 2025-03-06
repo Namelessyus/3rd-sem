@@ -12,22 +12,23 @@ h3
 }
 h2
 {
-    background-color: blue;
-    color: red;
+    background-color: lightblue;
+    color: purple;
 }
 
 #a{
-background-color: paleturquoise;
+background-color: peachpuff;
 }
 
 #b{
     background-color: palegreen;
     }
     #c{
-    background-color: palegoldenrod;
+    background-color: plum;
     }
 
 .abc{
     background-color: palevioletred;
+    color: black;
 
 }

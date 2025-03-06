@@ -1,0 +1,22 @@
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#a{
+    background-color: black;
+    color: white;
+}
+
+#b{
+    background-color: palegreen;
+}
+
+#c{
+    background-color: blueviolet;
+    font-size: xx-small;
+}
+
+#d{
+background-color: brown;
+opacity: 0.4;
+}
