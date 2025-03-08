@@ -1,4 +1,3 @@
-
 package yomari;
 
 public class IfStatements {
