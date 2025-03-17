@@ -39,13 +39,14 @@ public class Finding {
         }
         
 //find greatest number amongst 3 variables then output it
-    int x=10,y=20,z=30;
-    if(x>y){
-        System.out.println("x is greater");
-    }if (y>z){
-        System.out.println("y is greater");
-    }if (z>x){
-         System.out.println("z is greater");
-    }
+        int x = 10, y = 20, z = 30;
+
+        if (x > y && x > z) {
+            System.out.println("x is the greatest");
+        } else if (y > x && y > z) {
+            System.out.println("y is the greatest");
+        } else {
+            System.out.println("z is the greatest");
+        }
     }
 }
