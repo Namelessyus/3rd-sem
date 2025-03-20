@@ -1,11 +1,80 @@
-<!DOCTYPE html>
-<html>
+<head meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<head>
-    <title>College Website</title>
+
+    <title>Nav</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <style>
-        h2 {
+        * {
+            margin: 0;
+        }
+
+        nav {
+            background-color: black;
+            padding: 10px 10px 10px 0px;
+            position: sticky;
+            top: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 10px 10px 0px;
+        }
+
+        a:hover {
+            background-color: navy;
+        }
+
+        input {
+            float: right;
+        }
+
+        header {
             background-color: rgb(22, 22, 166);
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        footer {
+            background-color: gray;
+            height: 50px;
+
+            text-align: center;
+
+        }
+
+        p {
+            text-align: justify;
+            font-family: Winky sans;
+
+        }
+
+        i.fa-search {
+            position: absolute;
+            right: 20px;
+            top: 16px;
+
+        }
+
+        i.fa-home {
+            color: white;
+        }
+
+        i.fa-photo {
+            color: white;
+        }
+
+        i.fa-file{
+            color: white;
+        }
+
+        i.fa-mobile{
             color: white;
         }
 
@@ -15,14 +84,29 @@
     </style>
 </head>
 
-<body>
-    <img src="" alt="">
-    <center>
-        <h2>DAV COLLEGE</h2>
-    </center>
-    <div>
-        <button>Fill Form</button>
-    </div>
+    <body>
+        <header>
+DAV
+    </header>
+    
+        <nav>
+            <i class="fa fa-home"></i>
+            <a href="">Home</a>
+    
+            <i class="fa fa-photo"></i>
+            <a href="">Gallery</a>
+    
+            <i class="fa fa-file"></i>
+            <a href="">Admission</a>
+    
+            <i class="fa fa-mobile"></i>
+            <a href="">Contact</a>
+    
+            <i class="fa fa-search"></i>
+            <input type="search" name="" id="" placeholder="search">
+        </nav>
+    
+
     <table border="0">
         <tr>
             <td><img src="/WEB/Classes/class 2/1.webp" alt="" height="300"></td>
@@ -34,6 +118,8 @@
         </tr>
     </table>
     <hr>
+    
+    <footer>&copy anu</footer>
 </body>
 
 </html>
