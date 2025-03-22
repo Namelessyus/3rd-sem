@@ -66,6 +66,7 @@ printf("\n The top most elements was %d", stack[top]);
 top--;
 }
 }
+
 void display()
 {
 if(top>=0)
@@ -80,6 +81,7 @@ else{
 printf("\n The stack is empty");
 }
 }
+
 void peek(){
     if(top == -1)
 {
