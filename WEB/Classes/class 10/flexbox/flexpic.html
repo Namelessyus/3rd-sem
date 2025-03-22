@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>flexbox pics</title>
+    <style>
+
+        .images{
+            display: flex;
+            aspect-ratio: 5/2;
+            gap: 0.6em;
+        }
+
+        .image{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 100px;
+            flex: 1 ;
+            align-items: center;
+            text-align: center;
+            font-size: small;
+            color: black;
+            display: flex;
+            overflow: hidden;
+            justify-content: center;
+            transition: flex 0.5s ease-in-out;
+        }
+
+        .image:hover{
+            flex: 2;
+        }
+
+        .image1{
+            background-image: url(1.jpg);
+        }
+        .image2{
+            background-image: url(2.png);
+        }
+        .image3{
+            background-image: url(3.webp);
+        }
+        .image4{
+            background-image: url(4.jpg);
+        }
+        .image5{
+            background-image: url(5.jpg);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="images">
+        <div class="image image1"></div>
+        <div class="image image2"></div>
+        <div class="image image3">♥</div>
+        <div class="image image4"></div>
+        <div class="image image5"></div>
+    </div>
+</body>
+
+</html>
+

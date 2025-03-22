@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>flexbox</title>
+    <style>
+        .container {
+            height: 100vh;
+            border: 1px solid;
+            display: flex;
+            flex-direction:row;
+            gap: 1em;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .a {
+            height: 100px;
+            width: 100px;
+            text-align: center;
+        }
+
+        .f1 {
+            background-color: palegoldenrod;
+        }
+
+        .f2 {
+            background-color: palegreen;
+            align-self: flex-end;
+        }
+
+        .f3 {
+            background-color: palevioletred;
+            order: -1;
+        }
+
+        .f4 {
+            background-color: paleturquoise;
+            align-self: center;
+        }
+
+        .f5 {
+            background-color: plum;
+        }
+
+        .f6 {
+            background-color: powderblue;
+            align-self: flex-end;
+        }
+
+        .images{
+            display: flex;
+            aspect-ratio: 5/2;
+            gap: 1cm;
+        }
+        .image1{
+            background-image: url(1.jpg);
+        }
+        .image2{
+            background-image: url(2.jpg);
+        }
+        .image3{
+            background-image: url(3.jpg);
+        }
+        .image4{
+            background-image: url(4.jpg);
+        }
+        .image5{
+            background-image: url(5.jpg);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!--shortcut used div.f1$*5-->
+        <div class="f1 a">Item 0</div>
+        <div class="f2 a">Item 1</div>
+        <div class="f3 a">Item 2</div>
+        <div class="f4 a">Item 3</div>
+        <div class="f5 a">Item 4</div>
+        <div class="f6 a">Item 5</div>
+
+        <!--           
+        Properties 
+        display: flex;
+        flex-direction: ;  to change direction, 4 directions(row, row-reverse, column, column-reverse)
+        gap: 1em; to create gap
+        flex-wrap: wrap;  when u squeeze the display it will
+        go down and adjust to show itself
+        flex-wrap: wrap-reverse;  when u squeeze the display it will
+        go up and adjust to show itself
+        flex-wrap: nowrap;when u squeeze the display it will
+        also squeeze itself
+        justify-content: center; to keep content in center
+        order: -1;
+        flex-grow:4 ;
+        flex-shrink:4 ;
+        -->
+    </div>
+
+    <div class="images">
+        <div class="image image1"></div>
+        <div class="image image2"></div>
+        <div class="image image3"></div>
+        <div class="image image4"></div>
+        <div class="image image5"></div>
+    </div>
+</body>
+
+</html>
