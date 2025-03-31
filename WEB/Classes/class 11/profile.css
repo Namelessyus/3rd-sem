@@ -1,0 +1,69 @@
+.main{
+    width: 80%;
+    height: 40rem;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2%;
+    box-shadow: 0px 20px 20px black;
+    border-radius: 5px;
+}
+
+.right{
+    background-image: linear-gradient(rgb(105, 1, 1), maroon, black);
+    width: 25%;
+    height: 40rem;
+    border-radius: 5px;
+}
+
+img{
+    margin-left: 13%;
+    margin-top: 13%;
+    border-radius: 5px;
+}
+
+#name{
+    font-family: "Winky Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+#post{
+    font-family: "Winky Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.inner-first  .inner-second{
+    width: 90%;
+    display: flex;
+}
+
+.left{
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.phone{
+    margin-left: 110%;
+    margin-top: -45%;
+}
+
+.email{
+    margin-top: 5% ;
+}
+
+.view{
+    margin-left: 110%;
+    margin-top: -48%;
+}
+
+.body{
+    height:45rem;
+}
+
+.connect{
+    margin-left: 55%;
+
+}
