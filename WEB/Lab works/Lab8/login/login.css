@@ -1,0 +1,23 @@
+h1{
+    margin-left: 45%;
+    margin-top: 10%;
+}
+
+.form-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+table {
+    margin: 0 auto;
+}
+td {
+    padding: 10px;
+}
+button {
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+}
