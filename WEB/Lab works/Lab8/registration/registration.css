@@ -3,4 +3,26 @@ h1{
     margin-top: 10%;
     margin-left: 41%;
     margin-right: 30%;
+    color: white;
+}
+
+table{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background-color: #617891;
+    border: 1px solid #25344f;
+    border-radius: 2px;
+}
+
+button{
+    background-color: #25344f;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+body{
+    background-color: #25344f;
 }

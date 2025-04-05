@@ -1,6 +1,6 @@
 .main{
     width: 80%;
-    height: 40rem;
+    height: 43rem;
     display: flex;
     margin: 0 auto;
     margin-top: 2%;
@@ -11,7 +11,7 @@
 .right{
     background-image: linear-gradient(rgb(105, 1, 1), maroon, black);
     width: 25%;
-    height: 40rem;
+    height: 43rem;
     border-radius: 5px;
 }
 
@@ -63,11 +63,23 @@ img{
     height:45rem;
 }
 
-.connect{
-
+.connect {
+    margin-bottom: 30px; 
+    text-align: center;
 }
 
-.buton{
+.button{
+    display: inline-block;
+    margin-top: 10px;
     text-decoration: none;
-}
+    background-color: rgb(105, 1, 1);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    font-size: 16px;
+  }
+
 

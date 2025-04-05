@@ -1,0 +1,55 @@
+
+  button {
+    background-color: #28193d;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  h2 {
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: rgb(56, 56, 56);
+    background-color: #28193d;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    background-color: #b3a3ba;
+    border: 3px solid #68507b;
+    width: 350px; 
+    padding: 2%;
+    text-align: center;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    box-shadow: 0 0 15px #68507b;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+      

@@ -1,77 +1,79 @@
-.header{
-    background-image: url(DAV-Cover.jpg);
+.header {
+    background-image: url(pic.jpg);
     justify-content: center;
     display: flex;
-    height: 25vh;
-    align-content: center;
-    background-repeat: no-repeat;
-    
-}
-
-h3{
+    flex-direction: column;
+    height: 20vh;
+    align-items: center;
     text-align: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
 }
 
-.nav{   
-    justify-content: center;
+
+
+
+.nav {
     display: flex;
     margin-bottom: 1%;
-    height: 5vh;
+    height: 7vh;
     background-color: rgb(80, 0, 0);
-    padding: 10px 10px 10px 0px;
     position: sticky;
     top: 0;
 
-    a {
-        text-decoration: none;
-        color: white;
-        padding: 10px 10px 10px 0px;
-        align-content: center;
+}
 
-    }
-
-    a:hover {
-        background-color:black;
-    }
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px 10px 0px;
+    align-content: center;
 
 }
 
-.body{
+a:hover {
+    background-color: black;
+
+}
+
+
+
+.body {
     display: flex;
     justify-content: space-between;
-    height: 69vh;
+    height: 40vh;
 }
 
-.contone{    
-    background-color: antiquewhite;
-    text-align: center;
-    align-content: center;
-    width: 25%;
-   
-}
-
-.contwo{    
-    background-color: antiquewhite;
-    align-content: center;
-    text-align: center;
-    width: 25%;
+.contone {
+    background-color: rgb(148, 8, 8);
+    width: 20%;
+    height: 35%;
+    padding: 1%;
 
 }
 
-.main{
+.contwo {
+    background-color: rgb(148, 8, 8);
+    width: 20%;
+    height: 35%;
+    padding: 1%;
+
+}
+
+.main {
     background-color: white;
-    align-content: center;
-    text-align: center;
-    width: 49.5%;
-
+    width: 60%;
+    height: 70%;
+    padding: 1%;
 
 }
 
-.footer{
-    background-color: antiquewhite;
-    justify-content: center;
-    display: flex;
-    margin-top: 1%;
+.footer {
+    background-color: rgb(200, 200, 200);
+    display: flex;           
+    justify-content: center;    
+    align-items: center;     
     height: 9vh;
-
 }

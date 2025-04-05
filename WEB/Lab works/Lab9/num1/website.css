@@ -1,5 +1,5 @@
 .header{
-    background-color: antiquewhite;
+    background-color: rgb(200, 200, 200);
     justify-content: center;
     display: flex;
     margin-bottom: 1%;
@@ -9,7 +9,7 @@
 }
 
 .nav{   
-     background-color: antiquewhite;
+     background-color: rgb(200, 200, 200);
      justify-content: center;
      display: flex;
      margin-bottom: 1%;
@@ -24,7 +24,7 @@
 }
 
 .contone{    
-    background-color: antiquewhite;
+    background-color: rgb(200, 200, 200);
     text-align: center;
     align-content: center;
     width: 25%;
@@ -32,7 +32,7 @@
 }
 
 .contwo{    
-    background-color: antiquewhite;
+    background-color: rgb(200, 200, 200);
     align-content: center;
     text-align: center;
     width: 25%;
@@ -40,7 +40,7 @@
 }
 
 .main{
-    background-color: antiquewhite;
+    background-color: rgb(200, 200, 200);
     align-content: center;
     text-align: center;
     width: 49.5%;
@@ -49,7 +49,7 @@
 }
 
 .footer{
-    background-color: antiquewhite;
+    background-color:  rgb(200, 200, 200);
     justify-content: center;
     display: flex;
     margin-top: 1%;
