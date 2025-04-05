@@ -1,0 +1,77 @@
+.header{
+    background-image: url(DAV-Cover.jpg);
+    justify-content: center;
+    display: flex;
+    height: 25vh;
+    align-content: center;
+    background-repeat: no-repeat;
+    
+}
+
+h3{
+    text-align: center;
+}
+
+.nav{   
+    justify-content: center;
+    display: flex;
+    margin-bottom: 1%;
+    height: 5vh;
+    background-color: rgb(80, 0, 0);
+    padding: 10px 10px 10px 0px;
+    position: sticky;
+    top: 0;
+
+    a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 10px 10px 0px;
+        align-content: center;
+
+    }
+
+    a:hover {
+        background-color:black;
+    }
+
+}
+
+.body{
+    display: flex;
+    justify-content: space-between;
+    height: 69vh;
+}
+
+.contone{    
+    background-color: antiquewhite;
+    text-align: center;
+    align-content: center;
+    width: 25%;
+   
+}
+
+.contwo{    
+    background-color: antiquewhite;
+    align-content: center;
+    text-align: center;
+    width: 25%;
+
+}
+
+.main{
+    background-color: white;
+    align-content: center;
+    text-align: center;
+    width: 49.5%;
+
+
+}
+
+.footer{
+    background-color: antiquewhite;
+    justify-content: center;
+    display: flex;
+    margin-top: 1%;
+    height: 9vh;
+
+}

@@ -1,0 +1,58 @@
+.header{
+    background-color: antiquewhite;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 1%;
+    height: 10vh;
+    align-content: center;
+    
+}
+
+.nav{   
+     background-color: antiquewhite;
+     justify-content: center;
+     display: flex;
+     margin-bottom: 1%;
+     height: 8vh;
+
+}
+
+.body{
+    display: flex;
+    justify-content: space-between;
+    height: 69vh;
+}
+
+.contone{    
+    background-color: antiquewhite;
+    text-align: center;
+    align-content: center;
+    width: 25%;
+   
+}
+
+.contwo{    
+    background-color: antiquewhite;
+    align-content: center;
+    text-align: center;
+    width: 25%;
+
+}
+
+.main{
+    background-color: antiquewhite;
+    align-content: center;
+    text-align: center;
+    width: 49.5%;
+
+
+}
+
+.footer{
+    background-color: antiquewhite;
+    justify-content: center;
+    display: flex;
+    margin-top: 1%;
+    height: 9vh;
+
+}
