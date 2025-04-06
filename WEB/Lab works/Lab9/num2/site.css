@@ -19,7 +19,7 @@
     display: flex;
     margin-bottom: 1%;
     height: 7vh;
-    background-color: rgb(80, 0, 0);
+    background-color: #202c43;
     position: sticky;
     top: 0;
 
@@ -47,7 +47,7 @@ a:hover {
 }
 
 .contone {
-    background-color: rgb(148, 8, 8);
+    background-color: #617891;
     width: 20%;
     height: 35%;
     padding: 1%;
@@ -55,7 +55,7 @@ a:hover {
 }
 
 .contwo {
-    background-color: rgb(148, 8, 8);
+    background-color: #617891;
     width: 20%;
     height: 35%;
     padding: 1%;
