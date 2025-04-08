@@ -1,0 +1,80 @@
+.header {
+    background-image: url(pic.jpg);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    align-items: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+.nav {
+    display: flex;
+    margin-bottom: 1%;
+    height: 7vh;
+    background-color: #202c43;
+    position: sticky;
+    top: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px 10px 0px;
+    align-content: center;
+
+}
+
+a:hover {
+    background-color: black;
+
+}
+
+
+
+.body {
+    display: flex;
+    justify-content: space-between;
+    height: 40vh;
+}
+
+.contone {
+    background-color: #617891;
+    width: 20%;
+    height: 35%;
+    padding: 1%;
+
+}
+
+.insidecontwo {
+    background-color: #617891;
+    width: 20%;
+    height: 35%;
+    padding: 1%;
+
+}
+
+.main {
+    background-color: white;
+    width: 60%;
+    height: 70%;
+    padding: 1%;
+
+}
+
+.footer {
+    background-color: rgb(200, 200, 200);
+    display: flex;           
+    justify-content: center;    
+    align-items: center;     
+    height: 9vh;
+}
+
