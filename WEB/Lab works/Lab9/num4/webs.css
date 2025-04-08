@@ -1,3 +1,6 @@
+body{
+    background-color: #dfdfdf;
+}
 .header {
     background-image: url(pic.jpg);
     justify-content: center;
@@ -10,19 +13,25 @@
     padding: 20px;
     background-size: cover;
     background-position: center;
+    background-color: #ffffff;
 }
-
-
-
 
 .nav {
     display: flex;
     margin-bottom: 1%;
     height: 7vh;
-    background-color: #202c43;
+    background-color: #000000;
     position: sticky;
     top: 0;
+}
 
+.footer {
+    background-color: rgb(171, 171, 171);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9vh;
+    margin-top: .5rem;
 }
 
 a {
@@ -30,51 +39,67 @@ a {
     color: white;
     padding: 10px 10px 10px 0px;
     align-content: center;
-
 }
 
 a:hover {
-    background-color: black;
-
+    background-color: rgb(255, 255, 255);
+    color: #000000;
 }
 
-
-
-.body {
+.main{
     display: flex;
-    justify-content: space-between;
-    height: 40vh;
+    flex-direction: row;
 }
 
-.contone {
-    background-color: #617891;
-    width: 20%;
-    height: 35%;
-    padding: 1%;
-
+.left{
+    display: flex;
+    flex-direction: column;
+    margin-right: .5rem;
+    flex-shrink: 1;
+    width: 100%;
+    padding: 5px;
 }
 
-.insidecontwo {
-    background-color: #617891;
-    width: 20%;
-    height: 35%;
-    padding: 1%;
-
+.right{
+    display: flex;
+    flex-direction: column;
+    background-color: #dfdfdf;
+    flex-shrink: 2;
+    flex-basis: auto;
 }
 
-.main {
-    background-color: white;
-    width: 60%;
-    height: 70%;
-    padding: 1%;
-
+.img{
+    background-color: #9f9d9d;
+    height: 20vh;
 }
 
-.footer {
-    background-color: rgb(200, 200, 200);
-    display: flex;           
-    justify-content: center;    
-    align-items: center;     
-    height: 9vh;
+.image{
+    background-color: #9f9d9d;
+    height: 10vh;
+    
 }
 
+.leftPost{
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.left:last-child{
+    margin-bottom: 0;
+}
+
+
+.rightpost{
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.right:last-child{
+    margin-bottom: 0;
+}
+
+.farlink{
+    margin-left: 89.4%;
+}
