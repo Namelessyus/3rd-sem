@@ -1,0 +1,145 @@
+.header {
+    background-image: url();
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-position: center;
+    background-color: rgb(65, 0, 0);
+    color: aliceblue;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #000000;
+  }
+  
+  nav {
+    background-color: #000000;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #6978ef;
+  }
+  
+  .section {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 250px;
+  }
+  
+  table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  th, td {
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #00d1b2;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .images{
+    display: flex;
+    aspect-ratio: 5/2;
+    gap: 0.6em;
+}
+
+.image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100px;
+    flex: 1 ;
+    align-items: center;
+    text-align: center;
+    font-size: small;
+    color: black;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    transition: flex 0.5s ease-in-out;
+}
+
+.image:hover{
+    flex: 2;
+}
+
+.image1{
+    background-image: url(1.jpg);
+}
+.image2{
+    background-image: url(2.png);
+}
+.image3{
+    background-image: url(3.webp);
+}
+.image4{
+    background-image: url(4.jpg);
+}
+.image5{
+    background-image: url(5.jpg);
+}

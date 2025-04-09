@@ -70,12 +70,16 @@ a:hover {
 
 .img{
     background-color: #9f9d9d;
-    height: 20vh;
+    height: 40vh;
+    width: 100%;
 }
 
 .image{
     background-color: #9f9d9d;
     height: 10vh;
+    width : 100%;
+    display: block;
+    margin-bottom: 2px;;
 }
 
 .leftPost{
