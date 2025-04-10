@@ -20,7 +20,7 @@ public class Calculator {
     int add(int a, int b, int c){
         return a + b + c;
     }
-         public static void main(String[] args) {
+         public static void main(String args[]) {
         Calculator calc = new Calculator();
 
         System.out.println("Sum of 2 int: " + calc.add(5, 10));             

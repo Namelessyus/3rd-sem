@@ -14,8 +14,8 @@ public class Car {
     }
     public static void main(String args[]){
         Car theCar = new Car();
-        theCar.brand = "prajwal";
-        theCar.model = "boi";
+        theCar.brand = "Toyota";
+        theCar.model = "Corolla";
         theCar.year = 2005;
         
         theCar.displayDetails();
