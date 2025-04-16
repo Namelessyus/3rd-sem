@@ -72,9 +72,6 @@
         move_uploaded_file($temp,$folder);
         move_uploaded_file($temp1,$folder1);
 
-
-
-
         echo "Your informations are";
         echo "<hr>";
         echo "Name: $Name";
