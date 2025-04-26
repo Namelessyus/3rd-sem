@@ -69,7 +69,7 @@ void dequeue(){
 	}
 	
 void display(){
-	int front_pos = front.rear_pos=rear;
+	int front_pos = front,rear_pos=rear;
 		if(front == -1)
 		{
 			printf("Circular Queue is empty \n");
@@ -79,20 +79,27 @@ void display(){
 		if(front_pos <=rear_pos)
 		while(front_pos <=rear_pos)
 		{
-			printf("%d", cqueue_arr[front_pos]);
+			printf("%d", cqueue[front_pos]);
 			front_pos++;
 		}
 		else
 		{
 		while(front_pos <= 100-1)
 		{
-			printf("%d",cqueue_arr[front_pos]);
+			printf("%d",cqueue[front_pos]);
 			front_pos++;
 		}
 		front_pos=0;
+		while(front_pos <= rear_pos)
+		{
+			printf("%d", cqueue[front_pos]);
+			front_pos++;
+		}
+		}
+		printf("\n");
 		}
 		
-}
+
 
 
 	
