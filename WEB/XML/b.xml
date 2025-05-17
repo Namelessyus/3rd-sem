@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person>
+
+<student id='1'>
+<name>Ram</name>
+<email>Ram@gmail.com</email>
+<gender>Male</gender>
+</student>
+
+<student id='2'>
+<name>Rami</name>
+<email>Rami@gmail.com</email>
+<gender>Female</gender>
+</student>
+
+<student id='3'>
+<name>Sam</name>
+<email>Sam@gmail.com</email>
+<gender>Male</gender>
+</student>
+
+</person>

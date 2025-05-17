@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students [
+    <!ELEMENT students (student+)>
+    <!ELEMENT student (name, address+, phone, website)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT address (#PCDATA)>
+    <!ATTLIST address type (permanent | temporary) #REQUIRED>
+    <!ELEMENT phone (#PCDATA)>
+    <!ELEMENT website (#PCDATA)>
+]>
+<students>
+    <student>
+        <name>Ram</name>
+        <address type="permanent">123 Main St, City A</address>
+        <address type="temporary">456 Campus Rd, City B</address>
+        <phone>9876543210</phone>
+        <website>http://johndoe.com</website>
+    </student>
+</students>
