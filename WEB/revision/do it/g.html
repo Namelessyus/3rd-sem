@@ -3,19 +3,25 @@
 <head>
 <title>g</title>
 </head>
+<style>
+    button{
+        color: white;
+        background-color: rgb(110, 110, 255);
+        border-radius: 10%;
+        border: none;
+    }
+</style>
 <body>
     <form action="">
         First Name <br>
-        <input type="name">
-        <br>
+        <input type="name" placeholder="Johnny">
 
         Last Name <br>
-        <input type="name">
+<input type="name" placeholder="Nelson">
         <br>
 
         Birthday <br>
         <input type="date">
-        <br>
 
         Gender <br>
         <input type="radio">Male
@@ -24,10 +30,20 @@
 
         Email <br>
         <input type="email">
-        <br>
 
         Phone Number <br>
         <input type="number">
+        <br>
+
+        Subject <br>
+        <select type="option" name="Choose Option">
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        </select>
+        <br>
+
+        <button>Submit</button>
     </form>
 </body>
 </html>
