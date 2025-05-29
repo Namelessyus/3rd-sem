@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Person>
+<Student>
+<Name>Ram</Name>
+<Age>20</Age>
+<Marks>
+    <Internal>80</Internal>
+    <External>20</External>
+</Marks>
+<Fail>False</Fail>
+</Student>
+<Student>
+<Name>Ram</Name>
+<Age>20</Age>
+<Marks>
+    <Internal>80</Internal>
+    <External>20</External>
+</Marks>
+<Fail>False</Fail>
+</Student>
+</Person>
+
+<xs:element name="Person">
+<xs:complextype>
+<xs:sequence>
+<xs:element name='Student'/>
+<xs:complextype
+</xs:sequence>
+</xs:complextype>
