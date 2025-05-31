@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Studentbook>
+    <Firstname>Rahul</Firstname>
+    <Lastname>Sharma</Lastname>
+    
+    <Address>
+        <Permanent>
+            <Street>123 MG Road</Street>
+            <City>Bangalore</City>
+            <State>Karnataka</State>
+            <Country>India</Country>
+        </Permanent>
+        <Temporary>
+            <Street>456 Residency Rd</Street>
+            <City>Mysore</City>
+            <State>Karnataka</State>
+            <Country>India</Country>
+        </Temporary>
+    </Address>
+
+    <Phone>
+        <Mobile>9876543210</Mobile>
+        <Landline>08012345678</Landline>
+    </Phone>
+
+    <Marks>
+        <Subject name="Maths">85</Subject>
+        <Subject name="English">78</Subject>
+        <Subject name="Computer">92</Subject>
+    </Marks>
+
+    <Qualification>BCA 3rd Semester</Qualification>
+    <Mothername>Sunita Sharma</Mothername>
+    <Fathername>Ramesh Sharma</Fathername>
+    
+    <Hobbies>
+        <Hobby>Reading</Hobby>
+        <Hobby>Cricket</Hobby>
+        <Hobby>Painting</Hobby>
+    </Hobbies>
+</Studentbook>
