@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE class [
+  <!ELEMENT class (teacher* | professor*, student*, books)>
+  <!ELEMENT teacher (name, address?, phone?, qualification, country)>
+  <!ELEMENT professor (name, address?, phone?, qualification, country)>
+  <!ELEMENT student (name, id, address?, phone?, grade, country)>
+
+  <!ELEMENT name (#PCDATA)>
+  <!ATTLIST name
+    type CDATA #IMPLIED>
+
+  <!ELEMENT address (#PCDATA)>
+  <!ATTLIST address
+    add (temporary | permanent) #REQUIRED>
+
+  <!ELEMENT phone (#PCDATA)>
+
+  <!ELEMENT qualification (#PCDATA)>
+  <!ATTLIST qualification
+    Quali (bachelor | master | phd) #REQUIRED>
+
+  <!ELEMENT grade (#PCDATA)>
+  <!ATTLIST grade
+    grad (A | A- | B+ | B | B- | C+ | C | C- | fail) #REQUIRED>
+
+  <!ELEMENT country (#PCDATA)>
+  <!ELEMENT books (book+)>
+  <!ELEMENT book (#PCDATA)>
+
+  <!ATTLIST country
+    fixed CDATA #FIXED "Nepal">
+]>
+<class>
+  <teacher>
+    <name type="permanent">Rita Sharma</name>
+    <address add="permanent">Kathmandu</address>
+    <phone>9812345678</phone>
+    <qualification Quali="master">M.Ed</qualification>
+    <country fixed="Nepal">Nepal</country>
+  </teacher>
+
+  <professor>
+    <name type="visiting">Dr. Sagar</name>
+    <qualification Quali="phd">PhD in CS</qualification>
+    <country fixed="Nepal">Nepal</country>
+  </professor>
+
+  <student>
+    <name type="hostel">Ramesh Thapa</name>
+    <id>ST101</id>
+    <address add="temporary">Pokhara</address>
+    <grade grad="A">Excellent</grade>
+    <country fixed="Nepal">Nepal</country>
+  </student>
+
+  <student>
+    <name type="day-scholar">Anita Rai</name>
+    <id>ST102</id>
+    <qualification Quali="bachelor">BCA</qualification>
+    <grade grad="B+">Very Good</grade>
+    <country fixed="Nepal">Nepal</country>
+  </student>
+
+  <books>
+    <book>The Alchemist</book>
+    <book>Wings of Fire</book>
+    <book>1984</book>
+    <book>Rich Dad Poor Dad</book>
+    <book>The Secret</book>
+  </books>
+</class>
