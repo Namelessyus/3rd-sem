@@ -1,0 +1,117 @@
+<?xml version="1.0"  encoding="UTP-8"?>
+<class>
+<student>
+<Id>1</Id>
+<Fname>Sana</Fname>
+<Lname>Pradhananga</Lname>
+<age>12</age>
+<address>Thasikhel</address>
+</student>
+<student>
+<Id>2</Id>
+<Fname>Lily</Fname>
+<Lname>Pradhan</Lname>
+<age>19</age>
+<address>Thailand</address>
+</student>
+<student>
+<Id>3</Id>
+<Fname>ajina</Fname>
+<Lname>Nepal</Lname>
+<age>10</age>
+<address>Thamel</address>
+</student>
+</class>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Class>
+<Student>
+<Id>1</Id>
+<Fname>Gita</Fname>
+<Lname>Lama</Lname>
+<Age>20</Age>
+<Address>Lalitpur</Address>
+</Student>
+<Student>
+<Id>2</Id>
+<Fname>Ram</Fname>
+<Lname>karki</Lname>
+<Age>21</Age>
+<Address>Kathmandu</Address>
+</Student>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+<html>
+<head></head>
+<body>
+    <table border="1">
+    <tr>
+   <th> Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+    <th>Address</th>
+    </tr>
+    <tr>
+    <td>
+    <xsl:value-of select="Class/Student/Id"/>
+    </td>
+    <td><xsl:value-of select="Class/Student/Fname"/></td>
+    <td><xsl:value-of select="Class/Student/Lname"/></td>
+    <td><xsl:value-of select="Class/Student/Address"/></td>
+    </tr>
+    </table>
+</body>
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Class>
+<Student>
+<Id>1</Id>
+<Fname>Gita</Fname>
+<Lname>Lama</Lname>
+<Age>20</Age>
+<Address>Lalitpur</Address>
+</Student>
+<Student>
+<Id>2</Id>
+<Fname>Ram</Fname>
+<Lname>karki</Lname>
+<Age>21</Age>
+<Address>Kathmandu</Address>
+</Student>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <xsl:template match="/">
+    <html>
+      <head>
+        <title>Student List</title>
+      </head>
+      <body>
+        <table border="1">
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Address</th>
+          </tr>
+          <xsl:for-each select="class/student">
+            <tr>
+              <td><xsl:value-of select="Fname"/></td>
+              <td><xsl:value-of select="Lname"/></td>
+              <td><xsl:value-of select="age"/></td>
+              <td><xsl:value-of select="address"/></td>
+            </tr>
+          </xsl:for-each>
+        </table>
+      </body>
+    </html>
+  </xsl:template>
+
+</xsl:stylesheet>
