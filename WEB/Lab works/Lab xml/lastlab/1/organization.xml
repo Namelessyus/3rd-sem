@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization>
+    <employee>
+        <id>1</id>
+        <name>Ravi Kumar</name>
+        <department>HR</department>
+        <gender>Male</gender>
+        <experience>6</experience>
+        <email>ravi.kumar@gmail.com</email>
+        <city>Delhi</city>
+        <joiningYear>2018</joiningYear>
+    </employee>
+    <employee>
+        <id>2</id>
+        <name>Anjali Sharma</name>
+        <department>Finance</department>
+        <gender>Female</gender>
+        <experience>4</experience>
+        <email>anjali.sharma@yahoo.com</email>
+        <city>Mumbai</city>
+        <joiningYear>2021</joiningYear>
+    </employee>
+    <employee>
+        <id>3</id>
+        <name>Vikram Singh</name>
+        <department>IT</department>
+        <gender>Male</gender>
+        <experience>8</experience>
+        <email>vikram@gmail.com</email>
+        <city>Bangalore</city>
+        <joiningYear>2015</joiningYear>
+    </employee>
+    <employee>
+        <id>4</id>
+        <name>Pooja Verma</name>
+        <department>HR</department>
+        <gender>Female</gender>
+        <experience>2</experience>
+        <email>pooja@gmail.com</email>
+        <city>Chennai</city>
+        <joiningYear>2023</joiningYear>
+    </employee>
+    <employee>
+        <id>5</id>
+        <name>Raj Patel</name>
+        <department>Finance</department>
+        <gender>Male</gender>
+        <experience>9</experience>
+        <email>raj.patel@gmail.com</email>
+        <city>Pune</city>
+        <joiningYear>2014</joiningYear>
+    </employee>
+    <employee>
+        <id>6</id>
+        <name>Deepa Mehta</name>
+        <department>IT</department>
+        <gender>Female</gender>
+        <experience>6</experience>
+        <email>deepa.mehta@outlook.com</email>
+        <city>Delhi</city>
+        <joiningYear>2019</joiningYear>
+    </employee>
+    <employee>
+        <id>7</id>
+        <name>Amit Joshi</name>
+        <department>Sales</department>
+        <gender>Male</gender>
+        <experience>3</experience>
+        <email>amit.joshi@gmail.com</email>
+        <city>Ahmedabad</city>
+        <joiningYear>2022</joiningYear>
+    </employee>
+    <employee>
+        <id>8</id>
+        <name>Kiran Rao</name>
+        <department>Finance</department>
+        <gender>Female</gender>
+        <experience>10</experience>
+        <email>kiran.rao@gmail.com</email>
+        <city>Hyderabad</city>
+        <joiningYear>2013</joiningYear>
+    </employee>
+    <employee>
+        <id>9</id>
+        <name>Sunil Jain</name>
+        <department>IT</department>
+        <gender>Male</gender>
+        <experience>5</experience>
+        <email>sunil.jain@gmail.com</email>
+        <city>Kolkata</city>
+        <joiningYear>2020</joiningYear>
+    </employee>
+    <employee>
+        <id>10</id>
+        <name>Neha Kapoor</name>
+        <department>HR</department>
+        <gender>Female</gender>
+        <experience>7</experience>
+        <email>neha.kapoor@gmail.com</email>
+        <city>Jaipur</city>
+        <joiningYear>2017</joiningYear>
+    </employee>
+</organization>

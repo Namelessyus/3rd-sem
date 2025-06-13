@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Books [
+  <!ELEMENT Books (Book+)>
+  <!ELEMENT Book (Title?, Isbn+, (Zipcode | Author), Publish*)>
+  
+  <!ELEMENT Title (#PCDATA)>
+    <!ATTLIST Title
+      name CDATA #IMPLIED>
+
+  <!ELEMENT Isbn (#PCDATA)>
+    <!ATTLIST Isbn
+      no CDATA #REQUIRED>
+
+  <!ELEMENT Zipcode (#PCDATA)>
+    <!ATTLIST Zipcode
+      Zname CDATA "232232323">
+
+  <!ELEMENT Author (#PCDATA)>
+
+  <!ELEMENT Publish (#PCDATA)>
+    <!ATTLIST Publish
+      year CDATA #FIXED "1995">
+]>
+<Books>
+  <Book>
+    <Title name="XML Programming">XML Basics</Title>
+    <Isbn no="12345">ISBN-123</Isbn>
+    <Isbn no="67890">ISBN-678</Isbn>
+    <Zipcode>560001</Zipcode>
+    <Publish>Publisher A</Publish>
+    <Publish>Publisher B</Publish>
+  </Book>
+</Books>
