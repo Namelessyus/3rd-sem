@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!DOCTYPE Books SYSTEM "Q2.dtd"> 
+<Books> 
+  <Book> 
+    <Title name="Jivan Kaada Ki Phool">Jivan Kaada Ki Phool</Title> 
+    <Isbn no="12345">5687-34534</Isbn> 
+    <Isbn no="67890">234234-23532</Isbn> 
+    <Zipcode Zname="2342">404</Zipcode> 
+    <Publish year="1995">Namaste</Publish> 
+  </Book> 
+
+  <Book> 
+    <Isbn no="99999">3453-3453</Isbn> 
+    <Author>Salman Rushdi</Author> 
+  </Book> 
+</Books> 
+
+ 
+
+DTD 
+<!ELEMENT Books (Book+)> 
+<!ELEMENT Book (Title?, Isbn+, (Zipcode | Author), Publish*)> 
+<!ELEMENT Title (#PCDATA)> 
+<!ATTLIST Title name CDATA #IMPLIED> 
+<!ELEMENT Isbn (#PCDATA)> 
+<!ATTLIST Isbn no CDATA #REQUIRED> 
+<!ELEMENT Zipcode (#PCDATA)> 
+<!ATTLIST Zipcode Zname CDATA "232232323"> 
+<!ELEMENT Author (#PCDATA)> 
+<!ELEMENT Publish (#PCDATA)> 
+<!ATTLIST Publish year CDATA #FIXED "1995"> 
+
+ 

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<order xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+
+         xsi:noNamespaceSchemaLocation="Q5.xsd"> 
+
+  <customer> 
+
+    <name>Rajesh</name> 
+
+    <phone>9876543210</phone> 
+
+    <email>rajeshdai@example.com</email> 
+
+  </customer> 
+
+  <item category="veg"> 
+
+    <foodName>Vegetable Salad</foodName> 
+
+    <quantity>2</quantity> 
+
+    <price>5.50</price> 
+
+  </item> 
+
+  <item category="nonveg"> 
+
+    <foodName>Chicken Sandwich</foodName> 
+
+    <quantity>1</quantity> 
+
+    <price>7.25</price> 
+
+  </item> 
+
+  <totalAmount>18.25</totalAmount> 
+
+</order> 
+
+ 
+
+XSD 
+
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"> 
+
+  <xs:element name="order"> 
+
+    <xs:complexType> 
+
+      <xs:sequence> 
+
+        <xs:element name="customer"> 
+
+          <xs:complexType> 
+
+            <xs:sequence> 
+
+              <xs:element name="name"> 
+
+                <xs:simpleType> 
+
+                  <xs:restriction base="xs:string"> 
+
+                    <xs:minLength value="3"/> 
+
+                    <xs:maxLength value="50"/> 
+
+                  </xs:restriction> </xs:simpleType> </xs:element> 
+
+              <xs:element name="phone"> 
+
+                <xs:simpleType> 
+
+                  <xs:restriction base="xs:string"> 
+
+                    <xs:pattern value="\d{10}"/> 
+
+                  </xs:restriction> 
+
+                </xs:simpleType> 
+
+              </xs:element> 
+
+              <xs:element name="email" minOccurs="0"> 
+
+                <xs:simpleType> 
+
+                  <xs:restriction base="xs:string"> 
+
+                    <xs:pattern value="[a-zA-Z0-9]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/> 
+
+                  </xs:restriction> </xs:simpleType> </xs:element>  </xs:sequence> </xs:complexType> 
+
+        </xs:element> 
+
+        <xs:element name="item" minOccurs="1" maxOccurs="unbounded"> 
+
+          <xs:complexType> 
+
+            <xs:sequence> 
+
+              <xs:element name="foodName" type="xs:string"/> 
+
+              <xs:element name="quantity"> 
+
+                <xs:simpleType> 
+
+                  <xs:restriction base="xs:positiveInteger"/> 
+
+                </xs:simpleType> 
+
+              </xs:element> 
+
+              <xs:element name="price" type="xs:decimal"/> 
+
+            </xs:sequence> 
+
+            <xs:attribute name="category" use="required"> 
+
+              <xs:simpleType> 
+
+                <xs:restriction base="xs:string"> 
+
+                  <xs:enumeration value="veg"/> 
+
+                  <xs:enumeration value="nonveg"/> 
+
+                  <xs:enumeration value="vegan"/> 
+
+                </xs:restriction> </xs:simpleType> </xs:attribute> </xs:complexType> </xs:element> 
+
+        <xs:element name="totalAmount"> 
+
+          <xs:simpleType> 
+
+            <xs:restriction base="xs:decimal"> 
+
+              <xs:minExclusive value="0"/> 
+
+            </xs:restriction> </xs:simpleType> </xs:element> </xs:sequence> </xs:complexType> </xs:element> </xs:schema> 

@@ -1,0 +1,33 @@
+
+<?xml version="1.0" encoding="UTF-8"?> 
+<Studentbook> 
+<Firstname>Ram</Firstname> 
+<Lastname>Dahal</Lastname> 
+<Address> 
+<Permanent> 
+<Street>Natole</Street> 
+<City>Lalitpur</City> 
+<State>Bagmati</State> 
+<Country>Nepal</Country> 
+</Permanent> 
+<Temporary> 
+<Street>Ason</Street> 
+<City>Kathmandu</City> 
+<State>Bagmati</State> 
+<Country>Nepal</Country> 
+</Temporary> 
+</Address> 
+<Phone> 
+<Mobile>98224352</Mobile> 
+<Landline>5543534</Landline> 
+</Phone> 
+<Marks>88</Marks> 
+<Qualification>Bachelor of Computer Science</Qualification> 
+<Mothername>Rama Dahal</Mothername> 
+<Fathername>Dashrath Dahal</Fathername> 
+<Hobbies> 
+<Hobby>Archery</Hobby> 
+<Hobby>Football</Hobby> 
+<Hobby>Studying</Hobby> 
+</Hobbies> 
+</Studentbook> 

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!DOCTYPE class SYSTEM "class.dtd"> 
+
+<class> 
+
+  <professor> 
+
+    <name type="guest">Prof. Hari</name> 
+
+    <qualification Quali="master">Chemistry</qualification> 
+
+    <phone>9812345678</phone> 
+
+    <country fixed="Nepal">Nepal</country> 
+
+  </professor> 
+
+  <teacher> 
+
+    <name type="lead">Ms. Gita</name> 
+
+    <qualification Quali="master">Mathematics</qualification> 
+
+    <address add="temporary">Lalitpur</address> 
+
+    <country fixed="Nepal">Nepal</country> 
+
+  </teacher> 
+
+  <student> 
+
+    <name type="regular">Ramesh</name> 
+
+    <address add="permanent">Pokhara</address> 
+
+    <phone>9801122334</phone> 
+
+    <grade grad="B">B</grade> 
+
+    <country fixed="Nepal">Nepal</country> 
+
+  </student> 
+
+   <student> 
+
+    <name type="boarding">Suresh</name> 
+
+    <address add="temporary">KAthmandu</address> 
+
+    <phone>9823423231</phone> 
+
+    <grade grad="A">A</grade> 
+
+    <country fixed="Nepal">Nepal</country> 
+
+  </student> 
+
+  </class> 
+
+DTD 
+
+<!ELEMENT class ((teacher|professor)*, student*)> 
+
+<!ELEMENT professor (name, qualification, address?, phone?, country)> 
+
+<!ELEMENT teacher (name, qualification, address?, phone?, country)> 
+
+<!ELEMENT student (name, id?, address?, phone?, grade, country)> 
+
+<!ELEMENT name (#PCDATA)> 
+
+<!ATTLIST name type (guest|lead|regular|boarding) #REQUIRED> 
+
+<!ELEMENT id (#PCDATA)> 
+
+<!ELEMENT qualification (#PCDATA)> 
+
+<!ATTLIST qualification Quali (bachelor|master|phd) #REQUIRED> 
+
+<!ELEMENT address (#PCDATA)> 
+
+<!ATTLIST address add (temporary|permanent) #REQUIRED> 
+
+<!ELEMENT phone (#PCDATA)> 
+
+<!ELEMENT grade (#PCDATA)> 
+
+<!ATTLIST grade grad (A|A-|B|B-|C|C-|fail) #REQUIRED> 
+
+<!ELEMENT country (#PCDATA)> 
+
+<!ATTLIST country fixed CDATA #FIXED "Nepal"> 
+
+PHP 
+
+<?php 
+
+$xml = new DOMDocument; 
+
+$xml->load('class.xml'); 
+
+if ($xml->validate()) { 
+
+    echo "Your XML document is valid!!!"; 
+
+} else { 
+
+    echo "Invalid XML\n"; 
+
+    } 
+
+?> 
