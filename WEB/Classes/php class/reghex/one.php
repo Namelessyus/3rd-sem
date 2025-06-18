@@ -113,12 +113,12 @@
         }
 
         function test_input($data) {
-            $data = trim($data);               // Remove whitespace from beginning and end
-            $data = stripslashes($data);       // Remove backslashes
-            $data = htmlspecialchars($data);   // Convert special characters to HTML entities
+            $data = trim($data);               
+            $data = stripslashes($data);       
+            $data = htmlspecialchars($data);   
             return $data;
         }
 
         ?>
-</body>0
+</body>
 </html>
