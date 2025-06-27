@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<library xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance 
+
+ xsi:noNamespaceSchemaLocation="library.xsd"> 
+
+  <book> 
+
+    <title lang="en">Kafka on the shore</title> 
+
+    <author gender="male">Haruki Murakami</author> 
+
+    <isbn>9781234567890</isbn> 
+
+    <published>2002-04-10</published> 
+
+    <summary>Book about Kafka</summary> 
+
+  </book> 
+
+  <book> 
+
+    <title lang="np">One Piece</title> 
+
+    <author gender="male">Eichiro Oda</author> 
+
+    <isbn>9781234567890</isbn> 
+
+    <published>2000-04-10</published> 
+
+  </book> 
+
+  <magazine> 
+
+    <title lang="hi">Harry Potter</title> 
+
+    <editor gender="female">J.K. Rowling</editor> 
+
+    <issue>2025-06</issue> 
+
+    <published>2025-06-01</published> 
+
+  </magazine> 
+
+</library> 
+
+<!ELEMENT library (book*, magazine*)> 
+
+<!ELEMENT book (title, author, isbn, published, summary?)> 
+
+<!ELEMENT magazine (title, editor, issue, published)> 
+
+<!ELEMENT title (#PCDATA)> 
+
+<!ATTLIST title lang (en | np | hi) #REQUIRED> 
+
+<!ELEMENT author (#PCDATA)> 
+
+<!ATTLIST author gender (male | female | other) #REQUIRED> 
+
+<!ELEMENT editor (#PCDATA)> 
+
+<!ATTLIST editor gender (male | female | other) #REQUIRED> 
+
+<!ELEMENT isbn (#PCDATA)> 
+
+<!ELEMENT published (#PCDATA)> 
+
+<!ELEMENT summary (#PCDATA)> 
+
+<!ELEMENT issue (#PCDATA)> 
