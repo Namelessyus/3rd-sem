@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE airway [
+  <!ELEMENT airway (pilot+, passenger+, plane+)>
+
+  <!ELEMENT pilot (fname, lname, salary, age, phone)>
+  <!ELEMENT fname (#PCDATA)>
+  <!ELEMENT lname (#PCDATA)>
+  <!ELEMENT salary (#PCDATA)>
+  <!ELEMENT age (#PCDATA)>
+  <!ELEMENT phone (#PCDATA)>
+
+  <!ELEMENT passenger (fname, lname, gender, age, nationality)>
+  <!ELEMENT gender (#PCDATA)>
+  <!ELEMENT nationality (#PCDATA)>
+  <!ATTLIST nationality nation (nepalese | other) #REQUIRED>
+
+  <!ELEMENT plane (color, flightno, destination, time)>
+  <!ELEMENT color (#PCDATA)>
+  <!ELEMENT flightno (#PCDATA)>
+  <!ELEMENT destination (#PCDATA)>
+  <!ELEMENT time (#PCDATA)>
+]>
