@@ -1,30 +1,25 @@
-#include <stdio.h> Add commentMore actions
-#include <stdlib.h>
-
+#include<stdio.h>
 int main(){
-    int a[10], i, key, item, n, lowerbound = 0, upperbound, mid;
-    printf("\n Enter the Number element of an arrray:\n");
-    scanf("%d", &n);
-    upperbound = n - 1;
-    printf("\n Enter element in ascending order: ");
-    for(i = 0; i < n; i++){
-        scanf("%d", &a[i]);        
+	int a[10],i,loc=0,flag=0,item,n;
+	printf("\n Enter the Number element of an arrray:\n");
+	scanf("%d",&n);
+	printf("\n Enter element: ");
+    for(i=0;i<n;i++){
+		scanf("%d",&a[i]);        
     }
-    printf("Enter the element to be found: ");
-    scanf("%d", &key);
-    
-    while(lowerbound <= upperbound){
-        mid = (lowerbound + upperbound) / 2;
-        if(a[mid] == key){
-            printf("The item is found at location: %d", mid);
-            exit(0);
-        }
-        if(key < a[mid]){
-            upperbound = mid - 1;
-        } else {
-            lowerbound = mid + 1;
-        }
-    }
-    printf("Data not found");
-    return 0;
+	for(i=0;i<n;i++){
+		printf("\n Enter item to Search: ");
+		scanf("%d",&item);
+		while(loc<n){
+			if (item==a[loc]){
+				printf("\n Item Found at the location %d", loc+1);
+				flag++;
+				return 0; 
+			}
+			loc ++;
+		}	
+		if (flag==0){
+			printf("\n Item is not found");
+		}
+}
 }
